@@ -1,0 +1,52 @@
+/********************************/
+/*      Css      */
+/********************************/
+.btn{
+    min-width: 150px;
+    min-height: 46px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 21px;
+    border: 0;
+    font-family: $Almarai-Bold;
+    @media (max-width: 575px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    &.btn-primary{
+        background: linear-gradient(90.5deg, #0069AA 3.39%, #009DDC 93.39%);
+    }
+    &.btn-secondary{
+        background: rgba(136, 174, 75, 1);
+    }
+    &.btnWithoutBorder
+    {
+        display: block;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        color: $mainColor;
+        font-size: 14px;
+        line-height: 19px;
+        min-width: auto;
+        min-height: auto;
+        text-align: inherit;
+        font-family: $Almarai-Bold;
+    }
+}
+.btn-send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 26px;
+    color: $wColor;
+    background: linear-gradient(90.5deg, #0069AA 3.39%, #009DDC 93.39%);
+    font-family: $Almarai-Bold;
+    min-height: 60px;
+}

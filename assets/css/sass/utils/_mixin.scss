@@ -1,0 +1,118 @@
+// English direction Arabic direction
+//@include rtl('float', left, right);
+@mixin rtl($property, $ltr-value, $rtl-value) {
+    body[dir=ltr] & {
+      #{$property}: $ltr-value;
+    }
+    body[dir=rtl] & {
+        #{$property}: $rtl-value;
+    }
+}
+//@include absolute( null, null, null, 10%);
+@mixin absolute($top : null, $right : null, $bottom : null, $left : null ) {
+    top: $top;
+    bottom: $bottom;
+    body[dir=rtl] & {
+      right: $right;
+      left: $left;
+    }
+    body[dir=ltr] & {
+        right: $left;
+        left: $right;
+    }
+}
+
+// $type : margin or padding or order
+// $t-direction : direction in arabic version [default language]
+// $t-val : value of property
+//@include property_dir('padding', 'right', 15px);
+@mixin property_dir($type, $t-direction, $t-val) {
+    [dir=rtl] & {
+        #{$type}-#{$t-direction}: $t-val;
+    }
+    [dir=ltr] & {
+        @if ($t-direction == 'left') {
+            $t-direction : right;
+        } @else {
+            $t-direction : left;
+        }
+        #{$type}-#{$t-direction}: $t-val;
+    }
+}
+/********************************
+        font-face
+/********************************/
+
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( ttf: "truetype");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+        font-display: swap;
+    }
+}
+
+@include font-face("Almarai-Regular",
+"../fonts/Almarai-Regular",
+normal,
+normal,
+woff2 woff ttf eot);
+
+/*---------*/
+
+@include font-face("Almarai-Bold",
+"../fonts/Almarai-Bold",
+normal,
+normal,
+woff2 woff ttf eot);
+
+/*---------*/
+@include font-face("Almarai-ExtraBold",
+"../fonts/Almarai-ExtraBold",
+normal,
+normal,
+woff2 woff ttf eot);
+
+/*----Inter Font Family-----*/
+
+@include font-face("Inter-Regular",
+"../fonts/Inter-Regular",
+normal,
+normal,
+woff2 woff ttf eot);
+
+/*---------*/
+@include font-face("Inter-Medium",
+"../fonts/Inter-Medium",
+normal,
+normal,
+woff2 woff ttf eot);
+/*---------*/
+@include font-face("Inter-SemiBold",
+"../fonts/Inter-SemiBold",
+normal,
+normal,
+woff2 woff ttf eot);
+/*---------*/
+@include font-face("Inter-Bold",
+"../fonts/Inter-Bold",
+normal,
+normal,
+woff2 woff ttf eot);

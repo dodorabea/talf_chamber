@@ -1,0 +1,118 @@
+footer {
+    padding-top: 94px;
+    background: url(../images/shape/footerbg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $wColor;
+
+    .footerContent {
+        padding-bottom: 70px;
+        border-bottom: 1px solid rgba(68, 165, 216, 1);
+
+        .logoFooter {
+            .logo {
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 24px;
+                color: $wColor;
+                margin-bottom: 20px;
+                @include property_dir('padding', 'left', 5%);
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                @media (max-width: 991px) {
+                    margin-bottom: 24px;
+                }
+
+                li {
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid rgba(39, 61, 89, 1);
+                    border-radius: 100%;
+                    -webkit-transition: all 1s ease-out;
+                    transition: all 1s ease-out;
+                    &:hover{
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                        border: 1px solid rgba(136, 174, 75, 1);
+                    }
+
+                    a {
+                        color: $wColor;
+                        font-size: 24px;
+                       
+                    }
+                    &:hover{
+                       a{
+                        color: rgba(136, 174, 75, 1);
+                       }
+                    }
+                }
+            }
+        }
+
+        .footerItems {
+            h4 {
+                font-size: 17px;
+                line-height: 24px;
+                margin-bottom: 32px;
+                color: rgba(6, 156, 215, 1);
+                font-family: $Almarai-ExtraBold;
+            }
+
+            ul {
+                li {
+                    display: block;
+                    margin-bottom: 18px;
+                    line-height: 24px;
+                    font-size: 15px;
+
+                    a {
+                        position: relative;
+                        color: $wColor;
+                        display: flex;
+                        align-items: baseline;
+                        gap: 8px;
+                        -webkit-transition: all 1s ease-out;
+                        transition: all 1s ease-out;
+                        &:hover{
+                            color: rgba(136, 174, 75, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footerContentBottom {
+        padding: 36px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+            li {
+                font-size: 14px;
+                line-height: 22px;
+                color: $wColor;
+
+                a {
+                    color: $wColor;
+                }
+            }
+        }
+    }
+}

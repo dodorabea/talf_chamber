@@ -1,0 +1,21 @@
+مجلس الإدارة ------ Board.html
+تاريخ وتأسيس الغرفة-----history.html
+اللوائح والأنظمة----------------regulations.html
+الأخبار-------news.html
+
+التعاميم----Circulars.html
+الاحتجاج ----Protest.html
+اللجان-----------Committees.html
+التحكيم الاجباري----------arbitration.html
+---------------------------Notes-------------
+class="scrollby-body" data-bs-spy="scroll" dir="rtl" data-bs-offset="15"
+    data-bs-target="#myScrollspy"
+----------------------------------------------5/17/2024--------------------------------
+1)مركز التحكيم-------------------arbitrationCenter.html
+2)اللجان--------------------------CommitteesPage.html
+3)قائمة المحكمين------------------------listboard.html
+ 
+
+
+
+

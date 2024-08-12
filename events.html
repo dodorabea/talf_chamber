@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Talf Chamber</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
+    <!-- bootstrap v5 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.rtl.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+    <!--Aos-->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/gsap.min.js"></script>
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body id="vertical" class="scrollby-body" data-bs-spy="scroll" dir="rtl" data-bs-offset="15"
+    data-bs-target="#myScrollspy">
+    <!-- ============================================================== -->
+    <!-- loading - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Header - style you can find in css layout _header.scss -->
+    <!-- ============================================================== -->
+    <header class="header" id="header" data-lenis-prevent>
+        <section class="wrapper container">
+            <div class="col-2">
+                <a href="home.html" class="brand">
+                    <img src="assets/images/logo/logo.svg" alt="Logo Image" />
+                </a>
+            </div>
+            <div class="col-10">
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <span class="overlay"></span>
+                <nav class="navbar" id="navbar">
+                    <ul class="menu" id="menu">
+                        <li class="menu-item"><a href="about.html" class="menu-link">الغرفة التجارية</a></li>
+                        <!---->
+                        <li class="menu-item"><a target="_blank" href="https://es.taifchamber.org.sa/#/Login" class="menu-link"> الخدمات الإلكترونية</a></li>
+                        <!---->
+                        <li class="menu-item menu-dropdown">
+                            <span class="menu-link" data-toggle="submenu"> المنتجات والخدمات <i
+                                    class="fa fa-chevron-down"></i></span>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="Committees.html" class="submenu-link">اللجان</a></li>
+                                <li class="submenu-item"><a href="Protest.html" class="submenu-link">الاحتجاج</a></li>
+                                <li class="submenu-item"><a href="arbitration.html" class="submenu-link">التحكيم الإجباري</a></li>
+                                <li class="submenu-item"><a href="trainingRequest.html" class="submenu-link">التدريب</a></li>
+                                <li class="submenu-item"><a href="Committees.html" class="submenu-link">التوظيف</a></li>
+                            </ul>
+                        </li>
+                        <!---->
+                        <li class="menu-item menu-dropdown">
+                            <span class="menu-link" data-toggle="submenu"> المركز الإعلامي <i
+                                    class="fa fa-chevron-down"></i></span>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="news.html" class="submenu-link">أخبار</a></li>
+                                <li class="submenu-item"><a href="Circulars.html" class="submenu-link">تعاميم</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">مناقصات</a></li>
+                                <li class="submenu-item"><a href="Advertisements.html" class="submenu-link">إعلانات</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!---->
+                        <li class="menu-item"><a href="contactus.html" class="menu-link"> تواصل معنا</a></li>
+                    </ul>
+                    <div class="settingGroup">
+                        <ul class="d-flex menu align-items-center">
+                            <li>
+                                <a href="#" class="language">
+                                    en
+                                    <img src="assets/images/icon/global.svg.svg" alt="Global" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="joinUs.html" class="btn btn-primary">أنضم معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!-- ============================================================== -->
+    <!-- Intro - style you can find in css pages _layout.scss  -->
+    <!-- ============================================================== -->
+    <section class="introSection singlePages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="introSectionDescription">
+                        <div class="logoPart">
+                            <img src="assets/images/icon/subtitle.svg" alt="Images" />
+                            المركز الإعلامي
+                        </div>
+                        <!---->
+                        <div class="titlePart">
+                            <h5>الفعاليات</h5>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Advertisements Details - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <div class="advertisementsDetails">
+        <div class="container my-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 col-12" id="myScrollspy">
+                    <div class="lastNews list-group">
+                        <h4>التصنيف حسب
+                        </h4>
+                        <div class="mb-3">
+                            <span class="d-block subTitle">نوع الفعالية</span>
+                            <ul class="listCheckBox">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            لقاء
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                        <label class="form-check-label" for="flexCheckDefault2">
+                                            ورش عمل
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                        <div class="mb-3">
+                            <span class="d-block subTitle">وقت الفعالية</span>
+                            <ul class="listCheckBox">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                        <label class="form-check-label" for="flexCheckDefault3">
+                                            هذا الأسبوع
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                        <label class="form-check-label" for="flexCheckDefault4">
+                                            هذا الشهر
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                        <label class="form-check-label" for="flexCheckDefault5">
+                                            الشهر القادم
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-12 col-12">
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <a href="eventDetails.html" class="swiperSliderItem" style="background: url(assets/images/events/eventSlider.png);">
+                                <div class="dateEventShape" data-aos="zoom-in">
+                                    <span class="month">Apr</span>
+                                    <span class="day">22</span>
+                                </div>
+                                <div  class="d-block detailsPart">
+                                    <h3>مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة</h3>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/location.svg" alt="icon" />
+                                        مركز الملك سلمان الدولي للمؤتمرات
+                                    </span>
+                                    <span class="d-block">
+                                        <img src="assets/images/icon/mic.svg" alt="icon" />
+                                        منتدى
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Footer - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <footer>
+        <div class="container">
+            <div class="footerContent">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="logoFooter">
+                            <a href="#" class="logo">
+                                <img src="assets/images/logo/logo.svg" alt="logo" />
+                            </a>
+                            <p>دأبت غرفة الطائف منذ تأسيسها أن تكون انعكاسا حقيقيا لمكانة المدينة المنورة الحضارية
+                                وممثلا لحراكها الاقتصادي، وتمثلا جماليا لهوية طيبة الطيبة. فكان من لوازم هذه المواكبة أن
+                                تنعكس على وسمها الذي تراه الأعين.</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-9 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="footerItems">
+                                    <h4>روابط ذات صلة</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">الخدمات الحكومية الموحدة</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">وزارة التجارة</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">اتحاد الغرف السعودية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">اتحاد غرف دول مجلس التعاون الخليجي</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">وزارة الموارد البشرية والتنمية الاجتماعية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">إمارة منطقة المدينة</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!---->
+                            </div>
+                            <!---->
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="footerItems">
+                                    <h4>روابط مهمه</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">مركز الترقيم السعودي</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">الأسئلة الشائعة</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="footerItems">
+                                    <h4>خدماتنا</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">اللجان </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">التحكيم الاجباري</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">الاحتجاج</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">تدريب</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="footerItems">
+                                    <h4>اتصل بنا</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                المملكة العربية السعودية - المدينة المنورة - طريق الملك عبدالعزيز
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-phone"></i>
+                                                920028910
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                info@mcci.org.sa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <!---->
+            <div class="footerContentBottom">
+                <ul>
+                    <li>غرفة الطائف / المدينة المنورة This website is owned by </li>
+                    <li>
+                        <a href="#">الشروط والأحكام - سياسة الخصوصية</a>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+        </div>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- Fixed Links - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <div class="fixedLinks">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="assets/images/icon/phone.svg" alt="icon" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/images/icon/watsapp.svg" alt="icon" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Script -->
+    <!-- ============================================================== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/js/jQuery.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--AOS-->
+    <script src="assets/js/aos.js"></script>
+    <!--Main Js-->
+    <script src="assets/js/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
